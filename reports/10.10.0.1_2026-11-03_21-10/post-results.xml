@@ -266326,7 +266326,6 @@ fi
     <target-address>127.0.0.1</target-address>
     <target-address>10.10.0.1</target-address>
     <target-address>10.30.0.1</target-address>
-    <target-address>192.168.12.234</target-address>
     <target-address>0:0:0:0:0:0:0:1</target-address>
     <target-address>fe80:0:0:0:31b:d9fc:7f00:c707</target-address>
     <target-address>fe80:0:0:0:5260:7036:c2:6a92</target-address>
@@ -266347,7 +266346,6 @@ fi
       <fact name="urn:xccdf:fact:asset:identifier:ipv4" type="string">127.0.0.1</fact>
       <fact name="urn:xccdf:fact:asset:identifier:ipv4" type="string">10.10.0.1</fact>
       <fact name="urn:xccdf:fact:asset:identifier:ipv4" type="string">10.30.0.1</fact>
-      <fact name="urn:xccdf:fact:asset:identifier:ipv4" type="string">192.168.12.234</fact>
       <fact name="urn:xccdf:fact:asset:identifier:ipv6" type="string">::1</fact>
       <fact name="urn:xccdf:fact:asset:identifier:ipv6" type="string">fe80::31b:d9fc:7f00:c707</fact>
       <fact name="urn:xccdf:fact:asset:identifier:ipv6" type="string">fe80::5260:7036:c2:6a92</fact>
