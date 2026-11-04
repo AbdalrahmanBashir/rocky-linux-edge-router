@@ -8,6 +8,14 @@ The gateway utilizes a router on a stick topology. A single physical network int
 
 VLAN 2 handles the upstream WAN connection to the ISP modem. VLAN 10 serves the standard local area network for workstations. VLAN 30 provides a strictly isolated network for bare metal Kubernetes nodes.
 
+### DNS Caching (dnsmasq)
+
+To reduce upstream latency and minimize WAN queries, the router serves as an authoritative DHCP and caching DNS server for all local VLANs using dnsmasq.
+
+As shown in the capture below, the initial external query for a domain takes ~55ms to resolve against the public upstream. The subsequent query is intercepted by the router's local RAM cache and served in 0ms, effectively eliminating DNS resolution delay for all downstream clients.
+
+![DNS Cache Validation](./docs/dns-cache-validation.png)
+
 ### Security and CIS Compliance
 
 A router sits at the edge of the network and requires aggressive hardening. This appliance is audited against the strict CIS Red Hat Enterprise Linux 10 Benchmark for Level 2 Servers.
