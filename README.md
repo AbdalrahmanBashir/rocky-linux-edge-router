@@ -15,10 +15,10 @@ A router sits at the edge of the network and requires aggressive hardening. This
 During the initial deployment, the automated bash remediation pipeline successfully elevated the system security posture by resolving over 200 misconfigurations. The initial pre hardening score was 64 percent. After running the security baselines script, the final compliance score reached 96.5 percent.
 
 **Before**
-<iframe src="https://abdalrahmanbashir.github.io/rocky-linux-edge-router/reports/pre-report.html" width="100%" height="800" title="OpenSCAP Pre-Hardening Report"></iframe>
+<iframe src="https://abdalrahmanbashir.github.io/rocky-linux-edge-router/reports/10.10.0.1_2026-11-03_21-10/pre-report.html" width="100%" height="800" title="OpenSCAP Pre-Hardening Report"></iframe>
 
 **After**
-<iframe src="https://abdalrahmanbashir.github.io/rocky-linux-edge-router/reports/post-report.html" width="100%" height="800" title="OpenSCAP Post-Hardening Report"></iframe>
+<iframe src="https://abdalrahmanbashir.github.io/rocky-linux-edge-router/reports/10.10.0.1_2026-11-03_21-10/post-report.html" width="100%" height="800" title="OpenSCAP Post-Hardening Report"></iframe>
 
 ### Engineering Challenges and Solutions
 
