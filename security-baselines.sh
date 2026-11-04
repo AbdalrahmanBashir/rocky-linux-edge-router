@@ -73,7 +73,7 @@ harden_server() {
     log_info "Created local report directory: $report_dir"
 
     log_info "Installing OpenSCAP and running pre-hardening scan on $server..."
-    ssh -n -o ConnectTimeout=5 "$remote_user@$server" << EOF
+    ssh -T -o ConnectTimeout=5 "$remote_user@$server" << EOF
         set -euo pipefail
         
         # Install required OpenSCAP tools
